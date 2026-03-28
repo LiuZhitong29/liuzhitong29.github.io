@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>打开就是图，直接滚动</title>
+<style>
+  *{margin:0;padding:0;}
+  body{
+    background:#000;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+  }
+  img{
+    height:100%;
+    display:block;
+    animation: scroll 30s linear infinite;
+  }
+  @keyframes scroll{
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(2500px); }
+  }
+</style>
+</head>
+<body>
+  < img src="pic.jpg">
+</body>
+</html>
