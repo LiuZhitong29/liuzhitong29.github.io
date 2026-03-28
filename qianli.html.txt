@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>千里江山图动画</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+        }
+        .qianli-img {
+            width: 90%;
+            height: auto;
+            animation: slowMove 30s linear infinite;
+        }
+        @keyframes slowMove {
+            0% { transform: translateX(0) scale(1); }
+            50% { transform: translateX(-30px) scale(1.02); }
+            100% { transform: translateX(0) scale(1); }
+        }
+    </style>
+</head>
+<body>
+    < img src="qianli.jpg" class="qianli-img" alt="千里江山图">
+</body>
+</html>
