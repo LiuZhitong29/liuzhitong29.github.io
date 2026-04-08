@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解二次方程</title>
+</head>
+<body>
+    <script>
+        // 1. 弹3个输入框让用户填a、b、c
+        let a = parseFloat(prompt("请输入二次项系数a（必须大于0哦）："));
+        let b = parseFloat(prompt("请输入一次项系数b："));
+        let c = parseFloat(prompt("请输入常数项c："));
+
+        // 3. 算判别式delta
+        let delta = b * b - 4 * a * c;
+
+        // 4. 算两个根x1和x2
+        let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+        // 5. 弹框告诉用户结果
+        alert("方程的两个根是：x1 = " + x1 + "，x2 = " + x2);
+
+        // 6. 在控制台也输出一遍结果
+        console.log("方程的两个根是：x1 = " + x1 + "，x2 = " + x2);
+    </script>
+</body>
+</html>
